@@ -47,7 +47,7 @@ body {
   left: 0;
   z-index: 1;
 
-  background-image: radial-gradient(rgba(55, 255, 255, 0.1) 9%, transparent 9%);
+  background-image: radial-gradient(rgba(212, 247, 10, 0.1) 9%, transparent 9%);
   background-position: 0% 0%;
   background-size: 12vmin 12vmin;
 
@@ -61,17 +61,52 @@ body {
 }
 
 #menu[data-configuration="0"] > #menu-background-pattern {
-  background-position: 0% -5rem;
+  background-position: 0% -7rem;
 }
 
 #menu[data-configuration="1"] > #menu-background-pattern {
-  background-position: 0% -10rem;
+  background-position: 0% -17rem;
 }
 
 #menu[data-configuration="2"] > #menu-background-pattern {
-  background-position: 0% -15rem;
+  background-position: 0% -27rem;
 }
 
 #menu[data-configuration="3"] > #menu-background-pattern {
-  background-position: 0% -20rem;
+  background-position: 0% -37rem;
+}
+
+#menu-background-image {
+  background-image: url("background.jpg");
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  opacity: 0.7;
+}
+
+#menu-items:hover ~ #menu-background-image {
+  opacity: 0.3;
+  transition: 800ms ease;
+  /* background-size: 110vmax ; */
+}
+
+#menu[data-configuration="0"] > #menu-background-image {
+  background-position: center 45%;
+}
+
+#menu[data-configuration="1"] > #menu-background-image {
+  background-position: center 47%;
+}
+
+#menu[data-configuration="2"] > #menu-background-image {
+  background-position: center 50%;
+}
+
+#menu[data-configuration="3"] > #menu-background-image {
+  background-position: center 53%;
 }
